@@ -207,7 +207,7 @@ marimo/_lsp/
 __marimo__/
 
 # DBDemos stuff
-aibi-sales-pipeline-review/
-llm-rag-chatbot/
-llm-tools-functions/
-mlops-end2end/
+DBDemos/aibi-sales-pipeline-review/
+DBDemos/llm-rag-chatbot/
+DBDemos/llm-tools-functions/
+DBDemos/mlops-end2end/

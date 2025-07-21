@@ -1,0 +1,24 @@
+resources:
+  jobs:
+    new_workspace_setup:
+      name: new_workspace_setup
+      tasks:
+        - task_key: DBDemos_Notebook
+          notebook_task:
+            notebook_path: ../DBDemos/install-dbdemos
+            source: WORKSPACE
+          job_cluster_key: DBDemos_Notebook_cluster
+      job_clusters:
+        - job_cluster_key: DBDemos_Notebook_cluster
+          new_cluster:
+            spark_version: 16.4.x-scala2.13
+            node_type_id: Standard_F16s_v2
+            spark_env_vars:
+              PYSPARK_PYTHON: /databricks/python3/bin/python3
+            data_security_mode: DATA_SECURITY_MODE_DEDICATED
+            runtime_engine: STANDARD
+            kind: CLASSIC_PREVIEW
+            use_ml_runtime: true
+            is_single_node: true
+      queue:
+        enabled: true

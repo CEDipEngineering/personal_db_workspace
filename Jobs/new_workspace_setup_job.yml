@@ -5,7 +5,7 @@ resources:
       tasks:
         - task_key: DBDemos_Notebook
           notebook_task:
-            notebook_path: ../DBDemos/install-dbdemos
+            notebook_path: ../DBDemos/install-dbdemos.ipynb
             source: WORKSPACE
           job_cluster_key: DBDemos_Notebook_cluster
       job_clusters:

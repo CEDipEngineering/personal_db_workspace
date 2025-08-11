@@ -12,13 +12,13 @@ targets:
     mode: development
     default: true
     workspace:
-      host: https://adb-3100902641998633.13.azuredatabricks.net
+      host: https://dbc-ddc64bd3-7b9a.cloud.databricks.com/
 
   # The 'prod' target, used for production deployment.
   prod:
     mode: production
     workspace:
-      host: https://adb-3100902641998633.13.azuredatabricks.net
+      host: https://dbc-ddc64bd3-7b9a.cloud.databricks.com/
       # We always use /Users/carlos.dip@databricks.com for all resources to make sure we only have a single copy.
       root_path: /Users/carlos.dip@databricks.com/.bundle/${bundle.name}/${bundle.target}
     run_as:
